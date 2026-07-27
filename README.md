@@ -58,20 +58,5 @@ I focus on building clean, efficient, and user-friendly interfaces.
 
 ---
 
-## 📊 GitHub Stats  
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=chaanioi&show_icons=true&theme=tokyonight" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=chaanioi&theme=tokyonight" />
-</p>
-
----
-
-## 🌐 Contact  
-
-- 💼 LinkedIn: https://linkedin.com/in/YOUR-LINK  
-- 📧 Email: your@email.com  
-
----
 
 ⭐ *Open to opportunities and collaboration*
