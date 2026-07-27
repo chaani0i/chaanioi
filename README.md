@@ -1,54 +1,77 @@
 <div align="center">
 
-  <!-- 3D Futuristic Glowing Header -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,50:7000FF,100:007CF0&height=230&section=header&text=ARSLAN%20NAEEM&fontSize=52&fontColor=ffffff&animation=twinkle" width="100%" />
+<!-- Premium Gradient Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:0f2027,50:2c5364,100:00c6ff&text=ARSLAN%20NAEEM&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
 
-  <br/>
+<br/>
 
-  <!-- Profile Image with Glowing Cyber Ring -->
-  <a href="https://github.com/chaanioi">
-    <img src="profile.png" width="170" height="170" style="border-radius: 50%; border: 3px solid #00F7FF; box-shadow: 0 0 20px #00F7FF; object-fit: cover;" alt="Arslan Naeem Profile"/>
+<!-- Profile Image -->
+<img src="profile.png" width="140" style="border-radius:50%; border:3px solid #00c6ff;" />
+
+<br/><br/>
+
+<!-- Role Definition -->
+<h2>Frontend Engineer • UI Systems Builder • Performance-Focused Developer</h2>
+
+<!-- Typing Animation -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Inter&size=22&duration=3000&color=00C6FF&center=true&vCenter=true&width=700&lines=Building+Scalable+Frontend+Systems;React+%7C+TypeScript+%7C+Next.js;Clean+Architecture+%2B+Performance+First" />
+
+<br/><br/>
+
+<!-- Social Links -->
+<p>
+  <a href="https://linkedin.com/in/YOUR-LINK">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
-
-  <br/><br/>
-
-  <!-- Dynamic Typing Animation -->
-  <img src="https://readme-typing-svg.herokuapp.com?size=24&duration=2500&color=00F7FF&center=true&vCenter=true&width=700&lines=Frontend+Engineer+%7C+2%2B+Years+Experience;React+%26+TypeScript+Specialist;Building+Scalable%2C+High-Performance+Web+Apps" alt="Typing SVG" />
-
-  <br/><br/>
-
-  <!-- Modern Interactive Badges -->
-  <p align="center">
-    <a href="https://linkedin.com/in/YOUR-LINK">
-      <img src="https://img.shields.io/badge/LinkedIn-007CF0?style=for-the-badge&logo=linkedin&logoColor=white"/>
-    </a>
-    <a href="mailto:your@email.com">
-      <img src="https://img.shields.io/badge/Email-00F7FF?style=for-the-badge&logo=gmail&logoColor=black"/>
-    </a>
-    <a href="https://github.com/chaanioi">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-    </a>
-  </p>
+  <a href="mailto:your@email.com">
+    <img src="https://img.shields.io/badge/Email-111111?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://github.com/chaanioi">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+</p>
 
 </div>
 
 ---
 
-## ⚡ System Architecture & Profile
+# 🧠 Engineering Philosophy
 
-```typescript
+> “Great frontend is not UI — it’s architecture, performance, and user psychology working together.”
+
+- Build **scalable component systems**
+- Prioritize **performance over shortcuts**
+- Write **predictable, maintainable code**
+- Design for **real users, not just visuals**
+
+---
+
+# ⚡ System Profile
+
+```ts
 type Engineer = {
   name: string;
   role: string;
   experience: string;
-  coreStack: string[];
-  philosophy: string;
+  stack: string[];
+  strengths: string[];
 };
 
-const developer: Engineer = {
+const arslan: Engineer = {
   name: "Arslan Naeem",
   role: "Frontend Engineer",
-  experience: "2+ Years Industrial Experience",
-  coreStack: ["React", "TypeScript", "JavaScript (ES6+)", "Tailwind CSS"],
-  philosophy: "Build clean. Build scalable. Build with purpose."
+  experience: "2+ Years",
+  stack: [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript (ES6+)",
+    "Tailwind CSS"
+  ],
+  strengths: [
+    "Scalable UI Architecture",
+    "Performance Optimization",
+    "Reusable Component Systems",
+    "Clean Code Practices"
+  ]
 };
