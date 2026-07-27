@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="80" viewBox="0 0 800 80">
+  <rect width="800" height="80" rx="12" fill="#0d1117"/>
+  <text x="400" y="46" text-anchor="middle" fill="#00c6ff" font-family="ui-monospace,monospace" font-size="16">
+    Metrics will appear after the GitHub Metrics workflow runs
+  </text>
+</svg>

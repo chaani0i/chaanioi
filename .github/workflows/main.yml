@@ -1,17 +1,12 @@
-
----
-
-# ⚙️ **Your YAML (UPGRADED — PRO LEVEL)**
-
-Your current workflow is decent but **underutilized**. Here’s a **senior-level metrics config**:
-
-```yaml
 name: GitHub Metrics
 
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   metrics:
@@ -36,23 +31,27 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
 
-          # Calendar Heatmap
+          # Calendar heatmap
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
           # Achievements
           plugin_achievements: yes
 
-          # Activity
+          # Recent activity
           plugin_activity: yes
           plugin_activity_limit: 5
 
-          # Stars & Repos
+          # Stars
           plugin_stars: yes
 
-          # Habits
+          # Coding habits
           plugin_habits: yes
           plugin_habits_days: 30
 
           # Lines changed
           plugin_lines: yes
+
+          # Output
+          filename: github-metrics.svg
+          output_action: commit
