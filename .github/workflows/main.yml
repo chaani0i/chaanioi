@@ -1,4 +1,4 @@
-name: Generate Snake
+name: Update Profile Metrics
 
 on:
   schedule:
@@ -6,23 +6,29 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  github-metrics:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: Platane/snk@v3
+      - uses: lowlighter/metrics@latest
         with:
-          github_user_name: chaani0i
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: chaanioi
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: UTC
+          
+          # 3D Isometric Calendar Plugin
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
 
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Code activity stats
+          plugin_languages: yes
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
