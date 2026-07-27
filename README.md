@@ -1,90 +1,52 @@
-<!-- 🔥 Animated Header -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=200&section=header&text=Arslan%20Naeem&fontSize=40&fontColor=ffffff&animation=fadeIn" />
-</p>
+<div align="center">
 
-<!-- 🔥 Typing Animation -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=700&lines=Frontend+Engineer;2%2B+Years+Experience;React+%7C+TypeScript+Specialist;Building+Scalable+Web+Applications" />
-</p>
+  <!-- 3D Neon Waving Header -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,50:7000FF,100:007CF0&height=220&section=header&text=Arslan%20Naeem&fontSize=52&fontColor=ffffff&animation=twinkle" width="100%" />
 
----
-
-# 👋 About Me  
-
-💼 **Frontend Engineer with 2+ years of industry experience**  
-🚀 Focused on building scalable, performant, and user-centric web applications  
-
-- 🔭 Working on production-level applications  
-- ⚡ Strong focus on performance & clean UI  
-- 🤝 Collaborative team player (Backend + QA)  
-- 📈 Continuously improving & learning  
-
----
-
-# 🛠️ Tech Stack  
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,ts,js,html,css,git,github,vscode" />
-</p>
-
----
-
-# 🚀 Featured Projects  
-
-### 🔹 Govcon Frontend  
-- ⚡ High-performance JavaScript frontend  
-- 🎯 Optimized UI responsiveness  
-
-### 🔹 Garden Test Project  
-- 🧠 TypeScript architecture  
-- ♻️ Reusable component structure  
-
-### 🔹 Bidaya Admin Panel  
-- 🏢 Admin dashboard system  
-- 📊 Clean data handling UI  
-
----
-
-# 📊 GitHub Analytics  
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=chaanioi&show_icons=true&theme=tokyonight&hide_border=true" height="160"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=chaanioi&theme=tokyonight&hide_border=true" height="160"/>
-</p>
-
----
-
-# 🐍 Contribution Graph  
-
-<p align="center">
-  <img src="https://github.com/chaanioi/chaanioi/blob/output/github-contribution-grid-snake.svg" />
-</p>
-
----
-
-# 🌐 Connect With Me  
-
-<p align="center">
-  <a href="https://linkedin.com/in/YOUR-LINK">
-    <img src="https://img.shields.io/badge/LinkedIn-00F7FF?style=for-the-badge&logo=linkedin&logoColor=black"/>
+  <!-- Avatar Container (Supports Animated Particle GIF) -->
+  <a href="https://github.com/chaanioi">
+    <img src="https://github.com/chaanioi.png" width="170" height="170" style="border-radius: 50%; border: 3px solid #00F7FF;" alt="Arslan Naeem"/>
   </a>
-  <a href="mailto:your@email.com">
-    <img src="https://img.shields.io/badge/Email-00F7FF?style=for-the-badge&logo=gmail&logoColor=black"/>
-  </a>
-</p>
+
+  <br/><br/>
+
+  <!-- Dynamic Typing Title -->
+  <img src="https://readme-typing-svg.herokuapp.com?size=25&duration=2500&color=00F7FF&center=true&vCenter=true&width=700&lines=Frontend+Architect+%7C+React+%26+TypeScript;2%2B+Years+Building+Scalable+Web+Apps;Performance-Driven+UI%2FUX+Specialist" alt="Typing SVG" />
+
+  <br/>
+
+  <!-- Futuristic Badge Links -->
+  <p align="center">
+    <a href="https://linkedin.com/in/YOUR-LINK">
+      <img src="https://img.shields.io/badge/LinkedIn-007CF0?style=for-the-badge&logo=linkedin&logoColor=white"/>
+    </a>
+    <a href="mailto:your@email.com">
+      <img src="https://img.shields.io/badge/Email-00F7FF?style=for-the-badge&logo=gmail&logoColor=black"/>
+    </a>
+    <a href="https://github.com/chaanioi">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+    </a>
+  </p>
+
+</div>
 
 ---
 
-# ✨ Motto  
+## ⚡ System Architecture
 
-<p align="center">
-  <b>"Build clean. Build scalable. Build with purpose."</b>
-</p>
+```typescript
+type Engineer = {
+  name: string;
+  role: string;
+  experience: string;
+  stack: string[];
+  philosophy: string;
+};
 
----
-
-<!-- 🔥 Footer Wave -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=120&section=footer"/>
-</p>
+const developer: Engineer = {
+  name: "Arslan Naeem",
+  role: "Frontend Engineer",
+  experience: "2+ Years Industrial Experience",
+  stack: ["React", "TypeScript", "JavaScript (ES6+)", "Tailwind CSS"],
+  philosophy: "Build clean. Build scalable. Build with purpose."
+};
