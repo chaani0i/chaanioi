@@ -1,0 +1,95 @@
+name: Refresh profile cards
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/refresh-cards.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download summary cards
+        run: |
+          mkdir -p cards
+          user="chaani0i"
+          base="https://github-profile-summary-cards.vercel.app/api/cards"
+          theme="github_dark"
+          curl -fsSL "$base/stats?username=$user&theme=$theme" -o cards/card-stats.svg
+          curl -fsSL "$base/repos-per-language?username=$user&theme=$theme" -o cards/card-langs.svg
+          curl -fsSL "https://streak-stats.demolab.com/?user=$user&hide_border=true&background=0B1220&ring=38BDF8&fire=818CF8&currStreakLabel=38BDF8" -o cards/streak.svg
+
+      - name: Build contribution heatmap
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api graphql -f query='
+            query($login:String!){
+              user(login:$login){
+                contributionsCollection{
+                  contributionCalendar{
+                    totalContributions
+                    weeks{ contributionDays{ date contributionCount } }
+                  }
+                }
+              }
+            }' -f login='chaani0i' > contribs.json
+
+          python3 <<'PY'
+          import json
+          from pathlib import Path
+          data = json.load(open("contribs.json"))
+          cal = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+          weeks = cal["weeks"][-26:]
+          total = cal["totalContributions"]
+          days = [d for w in weeks for d in w["contributionDays"]]
+          max_c = max((d["contributionCount"] for d in days), default=1) or 1
+
+          def cell_color(n):
+              if n <= 0: return "#111827"
+              t = n / max_c
+              if t < 0.25: return "#0C4A6E"
+              if t < 0.5: return "#0284C7"
+              if t < 0.75: return "#38BDF8"
+              return "#7DD3FC"
+
+          W, H = 760, 220
+          pad_x, pad_y = 28, 52
+          cell, gap = 12, 3
+          svg = [
+              f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">',
+              '<rect width="100%" height="100%" rx="16" fill="#0B1220"/>',
+              '<text x="28" y="30" fill="#38BDF8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="16" font-weight="700">Contribution Activity</text>',
+              f'<text x="{W-28}" y="30" text-anchor="end" fill="#94A3B8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">{total} contributions in the last year</text>',
+              '<rect x="28" y="38" width="56" height="2" rx="1" fill="#818CF8"/>',
+          ]
+          for i, lab in enumerate(["", "Mon", "", "Wed", "", "Fri", ""]):
+              if lab:
+                  svg.append(f'<text x="18" y="{pad_y + i*(cell+gap) + cell - 2}" fill="#64748B" font-family="Segoe UI, Ubuntu, sans-serif" font-size="9">{lab}</text>')
+          for wi, week in enumerate(weeks):
+              for di, day in enumerate(week["contributionDays"]):
+                  x = pad_x + 12 + wi * (cell + gap)
+                  y = pad_y + di * (cell + gap)
+                  svg.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" fill="{cell_color(day["contributionCount"])}"/>')
+          lx, ly = W - 160, H - 24
+          svg.append(f'<text x="{lx-8}" y="{ly+10}" text-anchor="end" fill="#64748B" font-size="10" font-family="Segoe UI, Ubuntu, sans-serif">Less</text>')
+          for i, col in enumerate(["#111827", "#0C4A6E", "#0284C7", "#38BDF8", "#7DD3FC"]):
+              svg.append(f'<rect x="{lx + i*14}" y="{ly}" width="11" height="11" rx="2" fill="{col}"/>')
+          svg.append(f'<text x="{lx + 5*14 + 4}" y="{ly+10}" fill="#64748B" font-size="10" font-family="Segoe UI, Ubuntu, sans-serif">More</text>')
+          svg.append("</svg>")
+          Path("cards/activity-heatmap.svg").write_text("\n".join(svg), encoding="utf-8")
+          PY
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh profile cards"
+          file_pattern: cards/*.svg

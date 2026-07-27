@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Arslan Naeem">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="60%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0C1B2A"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#38BDF8"/>
+      <stop offset="75%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="220" fill="url(#bg)"/>
+  <rect x="0" y="0" width="5" height="220" fill="#38BDF8"/>
+  <text x="48" y="98" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#F8FAFC">Arslan Naeem</text>
+  <text x="48" y="136" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#94A3B8">Frontend Engineer  ·  UI Systems  ·  Performance</text>
+  <rect x="48" y="156" width="380" height="2" rx="1" fill="url(#line)"/>
+  <text x="48" y="186" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#64748B">React · Next.js · TypeScript · scalable component architecture</text>
+</svg>
