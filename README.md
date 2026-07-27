@@ -1,62 +1,90 @@
-# 👋 Hey, I'm Arslan Naeem  
+<!-- 🔥 Animated Header -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=200&section=header&text=Arslan%20Naeem&fontSize=40&fontColor=ffffff&animation=fadeIn" />
+</p>
 
-💼 **Frontend Engineer | 2+ Years Experience**  
-🚀 Building scalable, high-performance web applications  
-
----
-
-## 🧠 About Me  
-
-I’m a frontend developer with 2+ years of professional experience working in a software company.  
-I focus on building clean, efficient, and user-friendly interfaces.
-
-- 🔭 Working on modern web applications  
-- ⚡ Focused on performance & UI/UX  
-- 🤝 Team collaboration with backend & QA  
-- 📈 Always learning and improving  
+<!-- 🔥 Typing Animation -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=700&lines=Frontend+Engineer;2%2B+Years+Experience;React+%7C+TypeScript+Specialist;Building+Scalable+Web+Applications" />
+</p>
 
 ---
 
-## 🛠️ Tech Stack  
+# 👋 About Me  
 
-### 🎨 Frontend  
-![React](https://img.shields.io/badge/-React-000?&logo=react)
-![TypeScript](https://img.shields.io/badge/-TypeScript-000?&logo=typescript)
-![JavaScript](https://img.shields.io/badge/-JavaScript-000?&logo=javascript)
-![HTML5](https://img.shields.io/badge/-HTML5-000?&logo=html5)
-![CSS3](https://img.shields.io/badge/-CSS3-000?&logo=css3)
+💼 **Frontend Engineer with 2+ years of industry experience**  
+🚀 Focused on building scalable, performant, and user-centric web applications  
 
-### ⚙️ Tools  
-![Git](https://img.shields.io/badge/-Git-000?&logo=git)
-![GitHub](https://img.shields.io/badge/-GitHub-000?&logo=github)
-![VS Code](https://img.shields.io/badge/-VSCode-000?&logo=visualstudiocode)
+- 🔭 Working on production-level applications  
+- ⚡ Strong focus on performance & clean UI  
+- 🤝 Collaborative team player (Backend + QA)  
+- 📈 Continuously improving & learning  
 
 ---
 
-## 💼 Experience  
+# 🛠️ Tech Stack  
 
-💻 **Frontend Developer (2+ Years)**  
-- Built and maintained production-level web apps  
-- Developed admin panels and dashboards  
-- Integrated REST APIs  
-- Improved UI performance and responsiveness  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,ts,js,html,css,git,github,vscode" />
+</p>
 
 ---
 
-## 🚀 Projects  
+# 🚀 Featured Projects  
 
 ### 🔹 Govcon Frontend  
-- JavaScript-based frontend system  
-- Focused on UI and performance  
+- ⚡ High-performance JavaScript frontend  
+- 🎯 Optimized UI responsiveness  
 
 ### 🔹 Garden Test Project  
-- TypeScript-based architecture  
-- Reusable components  
+- 🧠 TypeScript architecture  
+- ♻️ Reusable component structure  
 
-### 🔹 Bidaya Admin  
-- Admin panel for system management  
+### 🔹 Bidaya Admin Panel  
+- 🏢 Admin dashboard system  
+- 📊 Clean data handling UI  
 
 ---
 
+# 📊 GitHub Analytics  
 
-⭐ *Open to opportunities and collaboration*
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=chaanioi&show_icons=true&theme=tokyonight&hide_border=true" height="160"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=chaanioi&theme=tokyonight&hide_border=true" height="160"/>
+</p>
+
+---
+
+# 🐍 Contribution Graph  
+
+<p align="center">
+  <img src="https://github.com/chaanioi/chaanioi/blob/output/github-contribution-grid-snake.svg" />
+</p>
+
+---
+
+# 🌐 Connect With Me  
+
+<p align="center">
+  <a href="https://linkedin.com/in/YOUR-LINK">
+    <img src="https://img.shields.io/badge/LinkedIn-00F7FF?style=for-the-badge&logo=linkedin&logoColor=black"/>
+  </a>
+  <a href="mailto:your@email.com">
+    <img src="https://img.shields.io/badge/Email-00F7FF?style=for-the-badge&logo=gmail&logoColor=black"/>
+  </a>
+</p>
+
+---
+
+# ✨ Motto  
+
+<p align="center">
+  <b>"Build clean. Build scalable. Build with purpose."</b>
+</p>
+
+---
+
+<!-- 🔥 Footer Wave -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=120&section=footer"/>
+</p>
