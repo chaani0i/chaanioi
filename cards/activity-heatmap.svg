@@ -183,6 +183,7 @@
 <rect x="400" y="142" width="12" height="12" rx="2" fill="#111827"/>
 <rect x="415" y="52" width="12" height="12" rx="2" fill="#111827"/>
 <rect x="415" y="67" width="12" height="12" rx="2" fill="#7DD3FC"/>
+<rect x="415" y="82" width="12" height="12" rx="2" fill="#111827"/>
 <text x="592" y="206" text-anchor="end" fill="#64748B" font-size="10" font-family="Segoe UI, Ubuntu, sans-serif">Less</text>
 <rect x="600" y="196" width="11" height="11" rx="2" fill="#111827"/>
 <rect x="614" y="196" width="11" height="11" rx="2" fill="#0C4A6E"/>
